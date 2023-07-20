@@ -1,0 +1,15 @@
+        {
+            "name": "Bilal Ishrat",
+            "position": "CEO",
+            "imageUrl": "assets/images/CEO.jpg"
+        },
+        {
+            "name": "Usama Shabbir",
+            "position": "COO",
+            "imageUrl": "assets/images/HRD.jpeg"
+        },
+        {
+            "name": "Hamza Anwar",
+            "position": "CFO",
+            "imageUrl": "assets/images/Finance.jpg"
+        },
