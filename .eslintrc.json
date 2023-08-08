@@ -22,12 +22,6 @@
     }
   },
   "rules": {
-<<<<<<< HEAD
     "no-multiple-empty-lines": "off",
-  },
-
-=======
-      
   }
->>>>>>> parent of e6764ded (Change in HERO)
-}
+  }
