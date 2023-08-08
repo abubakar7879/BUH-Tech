@@ -21,4 +21,8 @@
       }
     }
   },
+  "rules": {
+    "no-multiple-empty-lines": "off",
+  },
+
 }
