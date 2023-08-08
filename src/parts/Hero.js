@@ -7,35 +7,35 @@ import Button from 'elements/Button';
 
 import BuildWebsite from 'assets/images/Startup.png';
 
-function Booking() {
-  const handleBookingClick = (event) => {
-    event.preventDefault();
-    window.Calendly.initPopupWidget({
-      url: 'https://calendly.com/buhtech/buhtech-appointment',
-    });
-  };
-
-  return (
-    <div>
-      {/* Calendly link widget begin */}
-      <link
-        href="https://assets.calendly.com/assets/external/widget.css"
-        rel="stylesheet"
-      />
-      <script
-        src="https://assets.calendly.com/assets/external/widget.js"
-        type="text/javascript"
-        async
-      />
-      <button type="button" onClick={handleBookingClick}>
-        Book Appointment
-      </button>
-      {/* Calendly link widget end */}
-    </div>
-  );
-}
-
 export default function Hero() {
+  const lun = () => {
+    alert('Hello');
+    const handleBookingClick = (event) => {
+      event.preventDefault();
+      console.log('Booking button clicked'); // Add this line
+      window.Calendly.initPopupWidget({
+        url: 'https://calendly.com/buhtech/buhtech-appointment',
+      });
+    };
+    return (
+      <div>
+        {/* Calendly link widget begin */}
+        <link
+          href="https://assets.calendly.com/assets/external/widget.css"
+          rel="stylesheet"
+        />
+        <script
+          src="https://assets.calendly.com/assets/external/widget.js"
+          type="text/javascript"
+          async
+        />
+        <button type="button" onClick={handleBookingClick}>
+          Book Appointment
+        </button>
+        {/* Calendly link widget end */}
+      </div>
+    );
+  };
   return (
     <section className="hero">
       <Fade bottom>
@@ -52,7 +52,7 @@ export default function Hero() {
             to help you scale up your business.
           </p>
 
-          <Button onClick={Booking} type="link" className="flex w-71 h-18 items-center px-14 py-5 text-white text-xl bg-theme-purple rounded-lg shadow-2xl hover:bg-dark-theme-purple transition duration-200">
+          <Button onClick={lun} type="link" className="flex w-71 h-18 items-center px-14 py-5 text-white text-xl bg-theme-purple rounded-lg shadow-2xl hover:bg-dark-theme-purple transition duration-200">
             See Our Work
             <svg className="ml-2 w-7 h-7 text-white animate-bounce-x" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
